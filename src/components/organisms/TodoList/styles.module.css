@@ -1,5 +1,6 @@
 ul.todo_top_list {
   padding: 0;
+  margin-top: 50px;
 }
 
 li.todo_top_item {
