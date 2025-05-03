@@ -1,25 +1,22 @@
 /**
- * InputForm
+ * TextAreaForm
  *
  * @package atoms
  */
-
-import { JSX, forwardRef } from 'react';
+import { forwardRef, JSX } from 'react';
 import style from './styles.module.css';
 
-type InputFormType = JSX.IntrinsicElements['input'];
+type TextAreaFormType = JSX.IntrinsicElements['textarea'];
 
 /**
- *
- * @param {InputFormType} props
+ * @param {TextAreaFormType} props
  * @returns {JSX.Element}
  */
-export const InputForm = forwardRef<HTMLInputElement, InputFormType>(
+export const TextAreaForm = forwardRef<HTMLTextAreaElement, TextAreaFormType>(
   ({ placeholder, readOnly = false, ...rest }, ref) => {
     return (
-      <input
-        type="text"
-        className={style.input}
+      <textarea
+        className={style.textarea}
         placeholder={placeholder}
         readOnly={readOnly}
         ref={ref}

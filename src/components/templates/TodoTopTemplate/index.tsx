@@ -28,7 +28,6 @@ export const TodoTopTemplate = () => {
       <h1 className={style.title}>Todo List</h1>
       <div className={style.contentContainer}>
         <InputForm
-          className={'search_input'}
           placeholder={'Search Keyword'}
           value={searchKeyWord}
           onChange={handleSearchKeyWordInput}
