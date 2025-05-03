@@ -29,10 +29,7 @@ li.todo_top_item > span {
 }
 
 div.todo_top_icons {
-  display: flex;
-  justify-content: space-around;
   margin-top: 10px;
-  width: 130px;
   height: 30px;
 }
 
