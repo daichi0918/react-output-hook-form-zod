@@ -8,7 +8,7 @@ import { TodoType } from '../../../const';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   // faFile,
-  // faPenToSquare,
+  faPenToSquare,
   faTrashCan,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,7 +25,7 @@ type TodoListType = {
  * @returns {JSX.Element}
  */
 export const TodoList = (props: TodoListType) => {
-  const { showTodoList, handleDeleteTodoTask } = props;
+  const { showTodoList, handleDeleteTodoTask, goToEditPage } = props;
 
   return (
     <ul className={style.todo_top_list}>
@@ -40,14 +40,14 @@ export const TodoList = (props: TodoListType) => {
                   size="lg"
                   onClick={() => goToDetailPage(todo.id)}
                 />
-              </div>
+              </div> */}
               <div className={style.icon_wrapper}>
                 <FontAwesomeIcon
                   icon={faPenToSquare}
                   size="lg"
                   onClick={() => goToEditPage(todo.id)}
                 />
-              </div> */}
+              </div>
               <div className={style.icon_wrapper}>
                 <FontAwesomeIcon
                   icon={faTrashCan}

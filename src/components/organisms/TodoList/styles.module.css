@@ -31,6 +31,7 @@ li.todo_top_item > span {
 div.todo_top_icons {
   margin-top: 10px;
   height: 30px;
+  display: flex;
 }
 
 div.todo_top_icons > .icon_wrapper {
